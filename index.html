@@ -4,6 +4,17 @@ layout: default
 
 {% include header.html %}
 
+<div class="portfolio">
+  <h1>Check out my bots:</h1>
+    <ul>
+      {% for bot in site.data.bots %}
+      <li>
+          <a href="{{ bot.url }}">{{ bot.name }}</a>
+      </li>
+      {% endfor %}
+  </ul>
+</div>
+
 <div class="blog">
     <h1>Blog Posts:</h1>
     <ul>
